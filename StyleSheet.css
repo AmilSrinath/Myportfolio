@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body>#h {
+    background-image: url("assest/PageImg/HomePagePNG 1.png");
+    width: 100%;
+    height: 897px;
+    background-size: cover;
+    background-position: center;
+}
+
+#h>div>div>span{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    top: 10px;
+    left: 100px;
+    position: absolute;
+}
+
+#h>#nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+}
+
+/* Home Skill Gallery Project Assignment Contact */
+#h>div>nav>a{
+    color: white;
+    position: absolute;
+    right: 100px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    top: 35%;
+}
+
+/*Home*/
+#h>div>nav>a:nth-child(1){
+    color: white;
+    position: absolute;
+    right: 41%;
+}
+
+#h>div>nav>a:nth-child(1):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 41%;
+}
+
+/*About*/
+#h>div>nav>a:nth-child(2){
+    color: white;
+    position: absolute;
+    right: 36%;
+}
+
+#h>div>nav>a:nth-child(2):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 36%;
+}
+
+/*Skills*/
+#h>div>nav>a:nth-child(3){
+    color: white;
+    position: absolute;
+    right: 31.5%;
+}
+
+#h>div>nav>a:nth-child(3):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 31.5%;
+}
+
+/*Gallery*/
+#h>div>nav>a:nth-child(4){
+    color: white;
+    position: absolute;
+    right: 25.5%;
+}
+
+#h>div>nav>a:nth-child(4):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 25.5%;
+}
+
+/*Project*/
+#h>div>nav>a:nth-child(5){
+    color: white;
+    position: absolute;
+    right: 20%;
+}
+
+#h>div>nav>a:nth-child(5):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 20%;
+}
+
+/*Assignment*/
+#h>div>nav>a:nth-child(6){
+    color: white;
+    position: absolute;
+    right: 11%;
+}
+
+#h>div>nav>a:nth-child(6):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 11%;
+}
+
+/*Contact*/
+#h>div>nav>a:nth-child(7){
+    color: white;
+    position: absolute;
+    right: 5%;
+}
+
+#h>div>nav>a:nth-child(7):hover{
+    color: #44BD32;
+    position: absolute;
+    right: 5%;
+}
+
+#h>div>div>img{
+    position: absolute;
+    left: 10px;
+}
+
+#h>#H-Letter{
+    color: #44BD32;
+    font-size: 130px;
+    position: absolute;
+    right: 35%;
+    font-family: 'Inter', sans-serif;
+}
+
+#h>#hey{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    right: 19%;
+    top: 37%;
+    font-family: 'Inter', sans-serif;
+}
+
+#h>h3{
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 350px;
+    right: 290px;
+    font-family: 'Pacifico', cursive;
+}
+
+#h>div>img{
+    position: absolute;
+    top: 500px;
+}
+
+#h>div>img:nth-child(1){
+    position: absolute;
+    right: 400px;
+}
+
+#h>div>img:nth-child(2){
+    position: absolute;
+    right: 450px;
+}
+
+#h>div>img:nth-child(3){
+    position: absolute;
+    right: 500px;
+}
+
+#h>div>img:nth-child(4){
+    position: absolute;
+    right: 550px;
+}
+
+#h>button{
+    border: 2px solid #44BD32;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    right: 230px;
+    top: 500px;
+}
+
+#h>button:hover{
+    border: 2px solid #44BD32;
+    background-color: #44BD32;
+    color: white;
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    right: 230px;
+    top: 500px;
+}
+
+#icon{
+    position: relative;
+    left: 820px;
+    top: 255px;
+}
+
+#Inimg{
+    background-image: url("assest/PageImg/in.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+#Inimg:hover{
+    background-image: url("assest/PageImg/in1.png");
+}
+
+#Fimg{
+    background-image: url("assest/PageImg/FImg.png");
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    background-position: center;
+    left: 50px;
+    top: 2px;
+}
+
+#Fimg:hover{
+    background-image: url("assest/PageImg/FImg1.png");
+}
+
+#Gimg{
+    background-image: url("assest/PageImg/GImg.png");
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+    left: 102px;
+    top: 4px;
+}
+
+#Gimg:hover{
+    background-image: url("assest/PageImg/GImg1.png");
+}
+
+#Githubimg{
+    background-image: url("assest/PageImg/GitHubImg.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    left: 160px;
+}
+
+#Githubimg:hover{
+    background-image: url("assest/PageImg/GitHubImg1.png");
+}
