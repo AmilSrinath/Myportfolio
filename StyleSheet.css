@@ -5,14 +5,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
 
 /*---------------------------------Home------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+#upButton{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 10px;
+    border: 2px solid #44BD32;
+    color: white;
+    z-index: 9;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+#upButton:hover{
+    background-color: #44BD32;
+}
+
 #h{
     position: relative;
 }
 
 body>#h {
-    background-image: url("assest/HomePageAssest/HomePagePNG 1.png");
+    background-image: url("assest/HomePageAssest/Untitled-1.png");
     width: 100%;
     height: 897px;
     background-size: cover;
@@ -33,7 +59,6 @@ body>#h {
 #h>#nav{
     width: 100%;
     height: 80px;
-    position: fixed;
     z-index: 1;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.18);
@@ -54,17 +79,32 @@ body>#h {
     top: 35%;
 }
 
+#h>div>nav>a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #44BD32;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+    transition-property: width;
+}
+
 /*Home*/
 #h>div>nav>a:nth-child(1){
     color: white;
     position: absolute;
     right: 41%;
+
 }
 
 #h>div>nav>a:nth-child(1):hover{
     color: #44BD32;
-    position: absolute;
-    right: 41%;
+}
+
+#h>div>nav>a:nth-child(1):hover::after{
+    width: 100%;
 }
 
 /*About*/
@@ -76,8 +116,10 @@ body>#h {
 
 #h>div>nav>a:nth-child(2):hover{
     color: #44BD32;
-    position: absolute;
-    right: 36%;
+}
+
+#h>div>nav>a:nth-child(2):hover::after{
+    width: 100%;
 }
 
 /*Skills*/
@@ -89,8 +131,10 @@ body>#h {
 
 #h>div>nav>a:nth-child(3):hover{
     color: #44BD32;
-    position: absolute;
-    right: 31.5%;
+}
+
+#h>div>nav>a:nth-child(3):hover::after{
+    width: 100%;
 }
 
 /*Gallery*/
@@ -102,8 +146,10 @@ body>#h {
 
 #h>div>nav>a:nth-child(4):hover{
     color: #44BD32;
-    position: absolute;
-    right: 25.5%;
+}
+
+#h>div>nav>a:nth-child(4):hover::after{
+    width: 100%;
 }
 
 /*Project*/
@@ -115,8 +161,10 @@ body>#h {
 
 #h>div>nav>a:nth-child(5):hover{
     color: #44BD32;
-    position: absolute;
-    right: 20%;
+}
+
+#h>div>nav>a:nth-child(5):hover::after{
+    width: 100%;
 }
 
 /*Assignment*/
@@ -128,8 +176,10 @@ body>#h {
 
 #h>div>nav>a:nth-child(6):hover{
     color: #44BD32;
-    position: absolute;
-    right: 11%;
+}
+
+#h>div>nav>a:nth-child(6):hover::after{
+    width: 100%;
 }
 
 /*Contact*/
@@ -141,9 +191,12 @@ body>#h {
 
 #h>div>nav>a:nth-child(7):hover{
     color: #44BD32;
-    position: absolute;
-    right: 5%;
 }
+
+#h>div>nav>a:nth-child(7):hover::after{
+    width: 100%;
+}
+
 
 #h>div>div>img{
     position: absolute;
@@ -170,12 +223,32 @@ body>#h {
 
 /*Amil Srinath*/
 #h>h3{
-    color: white;
+    color: transparent;
     position: absolute;
     font-size: 50px;
     top: 370px;
-    right: 290px;
-    font-family: 'Pacifico', cursive;
+    right: 275px;
+    font-family: 'Coustard', serif;
+
+    -webkit-text-stroke: .1px #44BD32;
+    background-image: linear-gradient(white,#44BD32);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -300px 0;
+    animation: NameAnim 6s linear infinite;
+}
+
+@keyframes NameAnim {
+    0%,
+    95%,
+    100%{
+        background-position: -410px 0;
+    }
+
+    65%,
+    85%{
+        background-position: 0 0;
+    }
 }
 
 #h>div>img{
@@ -214,84 +287,75 @@ body>#h {
     position: absolute;
     right: 230px;
     top: 500px;
+    transition: 0.5s;
 }
 
 #h>a>button:hover{
-    border: 2px solid #44BD32;
     background-color: #44BD32;
-    color: white;
-    border-radius: 20px;
-    width: 130px;
+}
+
+.wrapper .button{
+    display: inline-block;
     height: 40px;
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    right: 230px;
-    top: 500px;
-}
-
-#icon{
-    position: absolute;
-    right: 600px;
-    top: 500px;
-}
-
-#Inimg{
-    background-image: url("assest/HomePageAssest/in.png");
-    position: absolute;
     width: 40px;
+    float: left;
+    margin: 0 5px;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+    top: 420px;
+    left: 755px;
+}
+
+.wrapper .button:hover{
+    background: #44BD32;
+    width: 150px;
+}
+
+.wrapper .button .icon{
+    display: inline-block;
     height: 40px;
-    background-size: cover;
-    background-position: center;
-}
-
-#Inimg:hover{
-    background-image: url("assest/HomePageAssest/in1.png");
-}
-
-#Fimg{
-    background-image: url("assest/HomePageAssest/FImg.png");
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    background-size: cover;
-    background-position: center;
-    left: 50px;
-    top: 2px;
-}
-
-#Fimg:hover{
-    background-image: url("assest/HomePageAssest/FImg1.png");
-}
-
-#Gimg{
-    background-image: url("assest/HomePageAssest/GImg.png");
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background-size: cover;
-    background-position: center;
-    left: 102px;
-    top: 4px;
-}
-
-#Gimg:hover{
-    background-image: url("assest/HomePageAssest/GImg1.png");
-}
-
-#Githubimg{
-    background-image: url("assest/HomePageAssest/GitHubImg.png");
-    position: absolute;
     width: 40px;
-    height: 40px;
-    background-size: cover;
-    background-position: center;
-    left: 160px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+    transition: all 0.3s ease-out;
 }
 
-#Githubimg:hover{
-    background-image: url("assest/HomePageAssest/GitHubImg1.png");
+.wrapper .button:nth-child(1) .icon{
+    background: white;
 }
 
+.wrapper .button:nth-child(2) .icon{
+    background: white;
+}
+
+.wrapper .button:nth-child(3) .icon{
+    background: white;
+}
+
+.wrapper .button:nth-child(4) .icon{
+    background: white;
+}
+
+
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: -50px;
+}
 
 
 
@@ -328,7 +392,8 @@ section>#aboutBorder{
     color: #44BD32;
     font-family: 'Josefin Slab', serif;
     display: inline-block;
-    font-size: 90px;
+    font-size: 110px;
+    margin: 0;
 }
 
 #a>div>span{
@@ -347,7 +412,7 @@ section>#aboutBorder{
     color: white;
     position: absolute;
     right: 18%;
-    top: 30%;
+    top: 25%;
     font-size: 25px;
 }
 
@@ -365,11 +430,11 @@ section>#aboutBorder{
     text-align: justify;
 }
 
-#a>a>button{
+#btnDownload{
     color: white;
     background-color: transparent;
     border-color: #44BD32;
-    border-radius: 40px;
+    border-radius: 30px;
     width: 170px;
     height: 50px;
     font-size: 20px;
@@ -377,6 +442,7 @@ section>#aboutBorder{
     position: absolute;
     top: 60%;
     right: 20%;
+    transition: 0.5s;
 }
 
 #a>a>button:hover{
@@ -393,23 +459,298 @@ section>#aboutBorder{
     right: 20%;
 }
 
+/*---------------------------------Skills------------------------------------*/
+
+
+body>#s {
+    background-image: url("assest/SkillsPageAssest/SkillsPageImg.png");
+    width: 100%;
+    height: 897px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#skills{
+    margin: 0;
+}
+
+section>#skillBorder{
+    background-color: #44BD32;
+    width: 200px;
+    height: 70px;
+    position: relative;
+}
+
+#s>div>#skills{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+
+#s>#glass{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    width: 1300px;
+    height: 720px;
+}
 
 
 
 
+/*---------------------------------Gallery------------------------------------*/
 
 
+#g{
+    position: relative;
+}
 
+body>#g{
+    background : black;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+}
 
+section>#galleryBorder{
+    background-color: #44BD32;
+    width: 200px;
+    height: 70px;
+    position: relative;
+}
 
+#gallery{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
 
+/* --------------------------------Image Row  1-------------------------------- */
+#imgDiv1{
+    position: absolute;
+    top: 100px;
+    left: 4px;
+}
 
+#g>#imgDiv1>div{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    display: inline-block;
+    transition: 1s;
+    border-radius: 5px 5px 5px 5px;
+}
 
+#imgDiv1>div:nth-child(1){
+    background: url("assest/GalleryPageAssest/Black&White/IMG_0546_BW.png");
+    background-position: center;
+    background-size: cover;
+    left: 80px;
+    top: 10px;
+}
 
+#imgDiv1>div:nth-child(1):hover{
+    background: url("assest/GalleryPageAssest/IMG_0546.png");
+    background-position: center;
+    background-size: cover;
+    left: 80px;
+    top: 10px;
+    width: 500px;
+    height: 300px;
 
+    scale: 1.3;
+    z-index: 1;
+}
 
+#imgDiv1>div:nth-child(2){
+    background: url("assest/GalleryPageAssest/Black&White/img_2_BW.png");
+    background-position: center;
+    background-size: cover;
+    left: 500px;
+    top: 10px;
+}
 
+#imgDiv1>div:nth-child(2):hover{
+    background: url("assest/GalleryPageAssest/img_2.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 500px;
+    top: 10px;
 
+    scale: 1.3;
+    z-index: 1;
+}
+
+#imgDiv1>div:nth-child(3){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    background-position: center;
+    background-size: cover;
+    left: 920px;
+    top: 10px;
+}
+
+#imgDiv1>div:nth-child(3):hover{
+    background: url("assest/GalleryPageAssest/img.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 920px;
+    top: 10px;
+
+    scale: 1.3;
+    z-index: 1;
+}
+
+/* --------------------------------Image Row  2-------------------------------- */
+
+#imgDiv2{
+    position: absolute;
+    top: 400px;
+    left: 4px;
+}
+
+#g>#imgDiv2>div{
+    width: 400px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    transition: 1s;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#imgDiv2>div:nth-child(1){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    left: 80px;
+    top: 10px;
+}
+
+#imgDiv2>div:nth-child(2){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    left: 500px;
+    top: 10px;
+}
+
+#imgDiv2>div:nth-child(3){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    left: 920px;
+    top: 10px;
+}
+
+/* --------------------------------Image Row  3-------------------------------- */
+
+#imgDiv3{
+    position: absolute;
+    top: 700px;
+    left: 4px;
+}
+
+#g>#imgDiv3>div{
+    width: 400px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    transition: 1s;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#imgDiv3>div:nth-child(1){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    left: 80px;
+    top: 10px;
+}
+
+#imgDiv3>div:nth-child(2){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    left: 500px;
+    top: 10px;
+}
+
+#imgDiv3>div:nth-child(3){
+    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
+    left: 920px;
+    top: 10px;
+}
+
+/*---------------------------------Project------------------------------------*/
+
+#p{
+    background-color: black;
+    height: 700px;
+    position: relative;
+}
+
+section>#projectBorder{
+    background-color: #44BD32;
+    width: 200px;
+    height: 70px;
+    position: relative;
+}
+
+#project{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+
+#mainProject>div{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+
+    border: 2px solid #44BD32;
+    width: 300px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+#mainProject>div:nth-child(1){
+    top: 150px;
+    left: 50px;
+}
+
+#mainProject>div:nth-child(2){
+    top: 150px;
+    left: 385px;
+}
+
+#mainProject>div:nth-child(3){
+    top: 150px;
+    left: 715px;
+}
+
+#mainProject>div:nth-child(4){
+    top: 150px;
+    left: 1050px;
+}
 
 
 
