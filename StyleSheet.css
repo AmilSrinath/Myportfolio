@@ -15,7 +15,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 #upButton{
     position: fixed;
     width: 45px;
@@ -39,12 +38,13 @@ html{
     position: relative;
 }
 
-body>#h {
+body>section>#h {
     background-image: url("assest/HomePageAssest/Untitled-1.png");
     width: 100%;
     height: 897px;
     background-size: cover;
     background-position: center;
+    position: sticky;
 }
 
 /*FUTURE SOFTWARE ENGINEER*/
@@ -58,7 +58,7 @@ body>#h {
     position: absolute;
 }
 
-#h>#nav{
+#nav{
     width: 100%;
     height: 80px;
     z-index: 1;
@@ -367,7 +367,7 @@ body>#h {
     position: relative;
 }
 
-body>#a {
+#a {
     background-image: url("assest/AboutPageAssest/AboutMeImg.png");
     width: 100%;
     height: 897px;
@@ -379,6 +379,7 @@ section>#aboutBorder{
     width: 200px;
     height: 70px;
     position: relative;
+    margin-left: 50px;
 }
 
 #a>div>#about{
@@ -387,7 +388,7 @@ section>#aboutBorder{
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 15px;
-    left: 8px;
+    left: 50px;
 }
 
 #a>div>#A_Letter{
@@ -482,6 +483,7 @@ section>#skillBorder{
     width: 200px;
     height: 70px;
     position: relative;
+    margin-left: 50px;
 }
 
 #s>div>#skills{
@@ -490,7 +492,7 @@ section>#skillBorder{
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 15px;
-    left: 8px;
+    left: 50px;
 }
 
 #s>#glass{
@@ -511,7 +513,7 @@ section>#skillBorder{
     left: 0;
     margin: auto;
 
-    width: 1300px;
+    width: 1320px;
     height: 720px;
 }
 
@@ -537,6 +539,7 @@ section>#galleryBorder{
     width: 200px;
     height: 70px;
     position: relative;
+    margin-left: 50px;
 }
 
 #gallery{
@@ -699,9 +702,62 @@ section>#galleryBorder{
 
 /*---------------------------------Project------------------------------------*/
 
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px;
+    top: 80px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    height: 400px;
+}
+
+.container .card .imgBox{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border: 2px solid #44BD32;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.container .card:hover .imgBox{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+}
+
+.container .card .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #p{
     background-color: black;
-    height: 700px;
+    height: 1100px;
     position: relative;
 }
 
@@ -710,6 +766,7 @@ section>#projectBorder{
     width: 200px;
     height: 70px;
     position: relative;
+    margin-left: 50px;
 }
 
 #project{
@@ -756,11 +813,3 @@ section>#projectBorder{
 
 /*AAAAAA*/
 /*AAAAAA*/
-
-
-
-
-
-
-
-
