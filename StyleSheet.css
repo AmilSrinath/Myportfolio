@@ -720,7 +720,7 @@ section>#galleryBorder{
     align-items: flex-start;
     width: 350px;
     height: 300px;
-    background: white;
+    border: 3px solid #44BD32;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
     transition: 0.5s;
@@ -735,7 +735,6 @@ section>#galleryBorder{
     top: 20px;
     width: 300px;
     height: 220px;
-    border: 2px solid #44BD32;
     border-radius: 12px;
     transition: 0.5s;
     overflow: hidden;
@@ -744,7 +743,7 @@ section>#galleryBorder{
 .container .card:hover .imgBox{
     top: -100px;
     scale: 0.75;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
 }
 
 .container .card .imgBox img{
@@ -755,10 +754,54 @@ section>#galleryBorder{
     height: 100%;
 }
 
+.container .card .content{
+    position: absolute;
+    top: 240px;
+    width: 90%;
+    height: 50px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    top: 120px;
+    height: 250px;
+}
+
+.container .card .content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #44BD32;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .card .content p{
+    color: white;
+    font-size: 1.05em;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
 #p{
     background-color: black;
     height: 1100px;
     position: relative;
+}
+
+.container .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #44BD32;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 section>#projectBorder{
