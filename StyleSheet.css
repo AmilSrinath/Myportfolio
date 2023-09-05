@@ -231,9 +231,9 @@ body>section>#h {
     font-size: 50px;
     top: 370px;
     right: 240px;
-    font-family: 'Coustard', serif;
+    font-family: 'Denk One', sans-serif;
 
-    -webkit-text-stroke: .0px white;
+    -webkit-text-stroke: 1.0px white;
     background-image: linear-gradient(#44BD32,#44BD32);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -455,18 +455,12 @@ section>#aboutBorder{
 
 /*---------------------------------Skills------------------------------------*/
 
-
-body>#s {
-    background-color: black;
-    width: 100%;
-    height: 2500px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.container3{
+    background: black;
 }
 
-#skills{
-    margin: 0;
+#s{
+    background: black;
 }
 
 section>#skillBorder{
@@ -474,7 +468,7 @@ section>#skillBorder{
     width: 200px;
     height: 70px;
     position: relative;
-    margin-left: 50px;
+    margin-left: 20vh;
 }
 
 #s>div>#skills{
@@ -483,9 +477,8 @@ section>#skillBorder{
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 15px;
-    left: 50px;
+    left: 60px;
 }
-
 
 .container3{
     display: flex;
@@ -606,8 +599,6 @@ section>#skillBorder{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-
-
 
 
 
@@ -803,6 +794,7 @@ section>#galleryBorder{
     gap: 100px 50px;
     padding: 50px;
     top: 80px;
+    background: black;
 }
 
 .container .card{
@@ -1100,6 +1092,8 @@ section>#assignment{
 }
 
 
+
+/*---------------------------------Contact------------------------------------*/
 
 
 
