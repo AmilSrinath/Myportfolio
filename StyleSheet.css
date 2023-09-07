@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Imprima&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 /*---------------------------------Home------------------------------------*/
 
@@ -605,6 +606,7 @@ section>#skillBorder{
 
 #g{
     position: relative;
+
 }
 
 body>#g{
@@ -778,6 +780,18 @@ section>#galleryBorder{
     background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
     left: 920px;
     top: 10px;
+}
+
+@media (max-width: 1325px) {
+    .contact4{
+        padding: 50px;
+    }
+    .container4{
+        flex-direction: column;
+    }
+    .container4 .contactInfo4, .contactForm4{
+        width: 100%;
+    }
 }
 
 /*---------------------------------Project------------------------------------*/
@@ -1048,6 +1062,29 @@ section>#assignment{
 
 /*---------------------------------Contact------------------------------------*/
 
+section>#contactBorder{
+    background-color: #44BD32;
+    width: 210px;
+    height: 70px;
+    position: relative;
+    margin-left: 17vh;
+}
+
+body>#c {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background: black;
+}
+
+#contact{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
 
 body>#c {
     width: 100%;
@@ -1059,14 +1096,13 @@ body>#c {
 
 .contact4{
     position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-size: cover;
     background: black;
+    padding-bottom: 50px;
 }
 
 .contact4 .content4{
@@ -1078,11 +1114,14 @@ body>#c {
     font-size: 36px;
     font-weight: 500;
     color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0;
 }
 
 .contact4 .content4 p{
-    font-weight: 300;
+    font-weight: 400;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container4{
@@ -1094,7 +1133,7 @@ body>#c {
 }
 
 .container4 .contactInfo4{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
 }
@@ -1129,10 +1168,16 @@ body>#c {
 .container4 .contactInfo4 .box4 .text4 h3{
     font-weight: 500;
     color: #44BD32;
+    margin: 9px;
+    margin-left: 0;
+}
+
+.container4 .contactInfo4 .box4 .text4 p{
+    margin: 0;
 }
 
 .contactForm4{
-    width: 40%;
+    width: 30%;
     padding: 40px;
     background: white;
     border-radius: 5%;
@@ -1173,7 +1218,7 @@ body>#c {
     font-size: 18px;
     margin: 10px 0;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.3s;
     color: #666;
 }
 
@@ -1207,37 +1252,3 @@ body>#c {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
