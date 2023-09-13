@@ -603,27 +603,6 @@ section>#skillBorder{
 
 /*---------------------------------Gallery------------------------------------*/
 
-
-#g{
-    position: relative;
-
-}
-
-body>#g{
-    background : black;
-    width: 100%;
-    height: 1000px;
-    background-size: cover;
-}
-
-section>#galleryBorder{
-    background-color: #44BD32;
-    width: 200px;
-    height: 70px;
-    position: relative;
-    margin-left: 50px;
-}
-
 #gallery{
     margin: 0;
     color: white;
@@ -633,168 +612,71 @@ section>#galleryBorder{
     left: 8px;
 }
 
-/* --------------------------------Image Row  1-------------------------------- */
-#imgDiv1{
+.image-grid{
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 200px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background: black;
+    position: relative;
+    justify-content: center;
+}
+
+#imgBoder{
     position: absolute;
-    top: 100px;
-    left: 4px;
+    width: 1200px;
 }
 
-#g>#imgDiv1>div{
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    display: inline-block;
-    transition: 1s;
-    border-radius: 5px 5px 5px 5px;
+.image-grid > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#imgDiv1>div:nth-child(1){
-    background: url("assest/GalleryPageAssest/Black&White/IMG_0546_BW.png");
-    background-position: center;
-    background-size: cover;
-    left: 80px;
-    top: 10px;
+.image-grid-col-2{
+    grid-column: span 2;
 }
 
-#imgDiv1>div:nth-child(1):hover{
-    background: url("assest/GalleryPageAssest/IMG_0546.png");
-    background-position: center;
-    background-size: cover;
-    left: 80px;
-    top: 10px;
-    width: 500px;
-    height: 300px;
-
-    scale: 1.3;
-    z-index: 1;
+.image-grid-row-2{
+    grid-row: span 2;
 }
 
-#imgDiv1>div:nth-child(2){
-    background: url("assest/GalleryPageAssest/Black&White/img_2_BW.png");
-    background-position: center;
-    background-size: cover;
-    left: 500px;
-    top: 10px;
-}
-
-#imgDiv1>div:nth-child(2):hover{
-    background: url("assest/GalleryPageAssest/img_2.jpg");
-    background-position: center;
-    background-size: cover;
-    left: 500px;
-    top: 10px;
-
-    scale: 1.3;
-    z-index: 1;
-}
-
-#imgDiv1>div:nth-child(3){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    background-position: center;
-    background-size: cover;
-    left: 920px;
-    top: 10px;
-}
-
-#imgDiv1>div:nth-child(3):hover{
-    background: url("assest/GalleryPageAssest/img.jpg");
-    background-position: center;
-    background-size: cover;
-    left: 920px;
-    top: 10px;
-
-    scale: 1.3;
-    z-index: 1;
-}
-
-/* --------------------------------Image Row  2-------------------------------- */
-
-#imgDiv2{
-    position: absolute;
-    top: 400px;
-    left: 4px;
-}
-
-#g>#imgDiv2>div{
-    width: 400px;
-    height: 250px;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    display: inline-block;
-    transition: 1s;
-    border-radius: 5px 5px 5px 5px;
-}
-
-#imgDiv2>div:nth-child(1){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    left: 80px;
-    top: 10px;
-}
-
-#imgDiv2>div:nth-child(2){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    left: 500px;
-    top: 10px;
-}
-
-#imgDiv2>div:nth-child(3){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    left: 920px;
-    top: 10px;
-}
-
-/* --------------------------------Image Row  3-------------------------------- */
-
-#imgDiv3{
-    position: absolute;
-    top: 700px;
-    left: 4px;
-}
-
-#g>#imgDiv3>div{
-    width: 400px;
-    height: 250px;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    display: inline-block;
-    transition: 1s;
-    border-radius: 5px 5px 5px 5px;
-}
-
-#imgDiv3>div:nth-child(1){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    left: 80px;
-    top: 10px;
-}
-
-#imgDiv3>div:nth-child(2){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    left: 500px;
-    top: 10px;
-}
-
-#imgDiv3>div:nth-child(3){
-    background: url("assest/GalleryPageAssest/Black&White/img_BW.png");
-    left: 920px;
-    top: 10px;
-}
-
-@media (max-width: 1325px) {
-    .contact4{
-        padding: 50px;
+@media screen and (max-width: 1024px){
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
     }
-    .container4{
-        flex-direction: column;
-    }
-    .container4 .contactInfo4, .contactForm4{
-        width: 100%;
-    }
+}
+
+
+#g{
+    position: relative;
+}
+
+body>#g{
+    background : black;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    padding-bottom: 20px;
 }
 
 /*---------------------------------Project------------------------------------*/
+
+section>#galleryBorder{
+    background-color: #44BD32;
+    width: 210px;
+    height: 70px;
+    position: relative;
+    margin-left: 17vh;
+}
 
 #p{
     background: black;
@@ -1004,10 +886,12 @@ section>#assignment{
     border-radius: 50px;
     margin-top: 40px;
     font-family: 'Poppins', sans-serif;
+    transition: 0.1s;
 }
 
 .box button:hover{
     letter-spacing: 1px;
+    width: 145px;
 }
 
 .box::before{
