@@ -12,6 +12,7 @@
 
 /*---------------------------------Home------------------------------------*/
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -368,7 +369,7 @@ body>section>#h {
 /*---------------------------------About------------------------------------*/
 
 #a {
-    background-image: url("assest/AboutPageAssest/AboutMeImg.png");
+    background-color: black;
     width: 100%;
     height: 897px;
     background-size: cover;
@@ -639,11 +640,6 @@ section>#skillBorder{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.image-grid > img:nth-child(1){
-    background-color: #ff253a;
-    z-index: 999;
 }
 
 .image-grid-col-2{
