@@ -422,12 +422,20 @@ svg{
 
 #h>#amilSrinath{
     position: absolute;
-    top: 420px;
+    top: 400px;
     right: 150px;
     color: white;
     font-size: 50px;
     letter-spacing: 3px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #h>#amilSrinath {
+        font-size: 30px;
+        right: 35px;
+        top: 378px;
+    }
 }
 
 path{
@@ -505,19 +513,65 @@ path{
     }
 }
 
+@media (max-width: 1390px) {
+    svg{
+        margin: 10px;
+        position: absolute;
+        top: 190px;
+        right: 832px;
+        width: 410px;
+    }
+}
+
+@media (max-width: 1300px) {
+    svg{
+        margin: 10px;
+        position: absolute;
+        top: 190px;
+        right: 789px;
+        width: 380px;
+    }
+}
+
+@media (max-width: 1230px) {
+    svg{
+        right: 768px;
+        width: 329px;
+    }
+}
+
+@media (max-width: 1770px) {
+    svg{
+        right: 750px;
+        width: 290px;
+    }
+}
+
+@media (max-width: 1120px) {
+    #btnDownload{
+        top: 60px;
+        right: 20px;
+    }
+
+    svg{
+        right: 750px;
+        width: 290px;
+    }
+}
+
 @media (max-width: 700px) {
     #h>span:first-child{
         font-size: 75px;
         color: #44BD32;
         top: 285px;
-        right: 150px;
+        right: 167px;
         font-weight: 800;
     }
     #h>span:nth-child(2){
         font-size: 30px;
         color: white;
-        top: 327px;
-        right: 40px;
+        top: 325px;
+        right: 53px;
         font-weight: 800;
     }
     svg{
@@ -536,7 +590,7 @@ path{
         height: 35px;
         font-family: 'Inter', sans-serif;
         position: absolute;
-        right: -950px;
+        right: -929px;
         top: 380px;
         font-size: 15px;
         transition: 0.5s;
@@ -551,7 +605,7 @@ path{
     position: relative;
 }
 
-#a>div>#A_Letter{
+#a>div>#A_Letter {
     color: #44BD32;
     font-family: 'Josefin Slab', serif;
     display: inline-block;
@@ -563,6 +617,50 @@ path{
     color: white;
     font-family: 'Josefin Slab', serif;
     font-size: 50px;
+}
+
+@media (max-width: 600px) {
+    #a>div>#A_Letter {
+        color: #44BD32;
+        font-family: 'Josefin Slab', serif;
+        display: inline-block;
+        font-size: 110px;
+        margin: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    #a>div>span {
+        position: absolute;
+        right: -240px;
+        font-size: 50px;
+        top: 50px;
+    }
+
+    #a>div>#Para {
+        position: absolute;
+        right: 14px;
+        left: 117px;
+        top: -35px;
+    }
+
+    svg {
+        margin: 10px;
+        position: absolute;
+        top: -160px;
+        right: 140px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 160px;
+    }
+    #imgBoder{
+        width: 490px;
+    }
 }
 
 #AboutName{
@@ -811,24 +909,24 @@ section>#skillBorder{
     grid-row: span 2;
 }
 
-@media screen and (max-width: 1220px){
+@media (max-width: 1220px){
     .image-grid{
         --num-cols: 2;
-        --row-height: 300px;
+        --row-height: 270px;
     }
     #imgBoder{
-        width: 900px;
+        width: 870px;
     }
 }
 
 
-@media screen and (max-width: 850px){
+@media (max-width: 850px){
     .image-grid{
         --num-cols: 2;
-        --row-height: 100px;
+        --row-height: 160px;
     }
     #imgBoder{
-        width: 450px;
+        width: 550px;
     }
 }
 
@@ -1021,7 +1119,7 @@ section>#assignment{
     justify-content: center;
     align-items: center;
     position: relative;
-    right: -40px;
+    right: -20px;
 }
 
 .box{
@@ -1243,8 +1341,8 @@ body>#c {
 }
 
 .contactForm4{
-    width: 30%;
-    padding: 40px;
+    width: 37%;
+    padding: 30px;
     background: white;
     border-radius: 5%;
 }
@@ -1316,5 +1414,464 @@ body>#c {
     }
     .container4 .contactInfo4, .contactForm4{
         width: 100%;
+    }
+}
+
+@media (max-width: 1120px) {
+    #btnDownload {
+        top: 81%;
+        right: 23%;
+    }
+
+    #a>div>#Para {
+        position: absolute;
+        top: 209px;
+        right: 32px;
+        left: -255px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 400px;
+        top: 35%;
+    }
+
+    #a>h3 {
+        right: 18%;
+        top: 46%;
+        font-size: 25px;
+    }
+
+    svg {
+        right: 306px;
+        width: 389px;
+        top: -60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #btnDownload {
+        top: 81%;
+        right: 23%;
+    }
+
+    #a>div>#Para {
+        position: absolute;
+        top: 209px;
+        right: 32px;
+        left: -194px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 400px;
+        top: 35%;
+    }
+
+    #a>h3 {
+        right: 18%;
+        top: 46%;
+        font-size: 25px;
+    }
+
+    svg {
+        right: 306px;
+        width: 350px;
+        top: -60px;
+    }
+}
+
+@media (max-width: 950px) {
+    #a > div > #Para {
+        position: absolute;
+        top: 209px;
+        right: 32px;
+        left: -126px;
+    }
+}
+
+@media (max-width: 900px) {
+    #a > div > #Para {
+        position: absolute;
+        top: 209px;
+        right: 32px;
+        left: -92px;
+    }
+}
+
+@media (max-width: 870px) {
+    #imgBoder {
+        width: 780px;
+    }
+
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 241px;
+    }
+}
+
+@media (max-width: 780px) {
+    #imgBoder {
+        width: 680px;
+    }
+
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 208px;
+    }
+}
+
+@media (max-width: 680px) {
+    #imgBoder {
+        width: 560px;
+    }
+
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 168px;
+    }
+}
+
+@media (max-width: 560px) {
+    #imgBoder {
+        width: 460px;
+    }
+
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 134px;
+    }
+}
+
+@media (max-width: 460px) {
+    #imgBoder {
+        width: 370px;
+    }
+
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 104px;
+    }
+}
+
+@media (max-width: 580px) {
+    .container .card .imgBox {
+        width: 260px;
+        height: 190px;
+    }
+
+    .container .card .content h2 {
+        font-size: 17.5px;
+    }
+
+    .container .card .content a {
+        top: 75px;
+    }
+
+    .container .card .content p {
+        font-size: 12.05px;
+        top: 15px;
+    }
+}
+
+@media (max-width: 535px) {
+    .container .card .imgBox {
+        width: 208px;
+        height: 130px;
+    }
+
+    .container .card .content h2 {
+        position: relative;
+        font-size: 17.5px;
+        top: 8px;
+    }
+
+    .container .card .content a {
+        top: 75px;
+    }
+
+    .container .card .content p {
+        font-size: 12.05px;
+        top: 15px;
+    }
+
+    .container .card .content {
+        top: 200px;
+    }
+
+    .container .card:hover .content {
+        top: 165px;
+    }
+
+    .container .card:hover .imgBox {
+        top: -70px;
+        scale: 1.0;
+    }
+}
+
+@media (max-width: 490px) {
+    .container .card .imgBox {
+        width: 177px;
+        height: 110px;
+    }
+
+    .container .card .content h2 {
+        position: relative;
+        font-size: 17.5px;
+        top: 8px;
+    }
+
+    .container .card .content a {
+        top: 75px;
+    }
+
+    .container .card .content p {
+        font-size: 12.05px;
+        top: 15px;
+    }
+
+    .container .card .content {
+        top: 175px;
+    }
+
+    .container .card:hover .content {
+        top: 120px;
+        padding: 0 0px;
+    }
+
+    .container .card:hover .imgBox {
+        top: -70px;
+        scale: 1.0;
+    }
+
+    .container .card {
+        height: 270px;
+    }
+
+    .container .card:hover {
+        height: 335px;
+    }
+
+    .container .card .content {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container .card .imgBox {
+        width: 160px;
+        height: 100px;
+    }
+
+    .container .card:hover .content {
+        top: 95px;
+        padding: 0 0px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container .card .content h2 {
+        position: relative;
+        font-size: 13.5px;
+        top: -2px;
+    }
+
+    .container .card .content p {
+        font-size: 9px;
+        top: 15px;
+    }
+
+    .container .card .content a {
+        top: 74px;
+        width: 105px;
+        height: 34px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    svg {
+        right: 228px;
+        width: 310px;
+        top: -60px;
+    }
+}
+
+@media (max-width: 810px) {
+    svg {
+        right: 498px;
+        width: 256px;
+        top: -85px;
+        rotate: -38deg;
+    }
+
+    #a > div > #Para {
+        position: absolute;
+        top: 209px;
+        right: 32px;
+        left: -5px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 254px;
+        top: 35%;
+    }
+}
+
+@media (max-width: 750px) {
+    svg {
+        right: 436px;
+        width: 226px;
+        top: -86px;
+        rotate: -38deg;
+    }
+
+    #a > div > #Para {
+        position: absolute;
+        top: 173px;
+        right: 44px;
+        left: 31px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 254px;
+        top: 35%;
+    }
+}
+
+@media (max-width: 660px) {
+    svg {
+        right: 396px;
+        width: 211px;
+        top: -86px;
+        rotate: -38deg;
+    }
+
+    #a > div > #Para {
+        position: absolute;
+        top: 173px;
+        right: 53px;
+        left: 122px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 175px;
+        top: 35%;
+    }
+}
+
+@media (max-width: 600px) {
+    svg {
+        right: 326px;
+        width: 211px;
+        top: -93px;
+        rotate: -38deg;
+    }
+
+    #a > div > #Para {
+        position: absolute;
+        top: 173px;
+        right: 40px;
+        left: 163px;
+        font-size: 15px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 400px;
+        top: 35%;
+    }
+}
+
+@media (max-width: 530px) {
+    svg {
+        right: 257px;
+        width: 211px;
+        top: -93px;
+        rotate: -38deg;
+    }
+
+    #a > div > #Para {
+        position: absolute;
+        top: 173px;
+        right: 42px;
+        left: 223px;
+        font-size: 15px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 351px;
+        top: 35%;
+    }
+}
+
+@media (max-width: 470px) {
+    svg {
+        right: 196px;
+        width: 161px;
+        top: -93px;
+        rotate: -38deg;
+    }
+
+    #a > div > #Para {
+        position: absolute;
+        top: 149px;
+        right: 44px;
+        left: 261px;
+        font-size: 14px;
+    }
+
+    #AboutName {
+        position: absolute;
+        right: 301px;
+        top: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    #upButton {
+        right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #a > div > #Para {
+        position: absolute;
+        top: 149px;
+        right: 44px;
+        left: 310px;
+        font-size: 14px;
+    }
+
+    #a>div>#A_Letter {
+        font-size: 80px;
+    }
+
+    #a>div>span {
+        position: absolute;
+        right: -190px;
+        font-size: 40px;
+        top: 32px;
+    }
+
+    #a>h3 {
+        right: 20%;
+        top: 43%;
+        font-size: 22px;
+    }
+
+    section>#skillBorder {
+        width: 200px;
+        height: 70px;
+        position: relative;
+        margin-left: 15vh;
+    }
+
+    section>#galleryBorder {
+        margin-left: 15vh;
     }
 }
