@@ -22,6 +22,7 @@
 
 body{
     font-family: AppleGothic;
+    overflow-x: hidden;
 }
 
 html{
@@ -156,7 +157,6 @@ nav ul li a{
         transition: all .5s;
         z-index: 1;
 
-        /* From https://css.glass */
         background: rgba(0, 0, 0, 0.3);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -542,8 +542,9 @@ path{
 
 @media (max-width: 1770px) {
     svg{
-        right: 750px;
-        width: 290px;
+        right: 776px;
+        width: 352px;
+        left: 55px;
     }
 }
 
@@ -977,7 +978,7 @@ section>#galleryBorder{
     border: 3px solid #44BD32;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .container .card:hover{
@@ -990,7 +991,7 @@ section>#galleryBorder{
     width: 300px;
     height: 220px;
     border-radius: 12px;
-    transition: 0.5s;
+    transition: 1s;
     overflow: hidden;
 }
 
@@ -1010,13 +1011,13 @@ section>#galleryBorder{
 
 .container .card .content{
     position: absolute;
-    top: 240px;
+    top: 253px;
     width: 90%;
     height: 30px;
     padding: 0 30px;
     text-align: center;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .container .card:hover .content{
@@ -1873,5 +1874,53 @@ body>#c {
 
     section>#galleryBorder {
         margin-left: 15vh;
+    }
+}
+
+@media (max-width: 385px) {
+    section>#skillBorder {
+        margin-left: 10vh;
+    }
+
+    section>#galleryBorder {
+        margin-left: 10vh;
+    }
+
+    section>#projectBorder {
+        margin-left: 10vh;
+    }
+
+    section>#assignmentBorder {
+        margin-left: 10vh;
+    }
+
+    section>#contactBorder {
+        margin-left: 10vh;
+    }
+    .contactForm4{
+        width: 115%;
+    }
+
+    .container{
+        padding: 100px 86px 100px 83px;
+    }
+
+    .container .card .content h2 {
+        font-size: 16.5px;
+    }
+
+    .container .card .content p {
+        font-size: 14px;
+    }
+
+    .container .card .content a {
+        top: 74px;
+        width: 115px;
+        height: 37px;
+        font-size: 14px;
+    }
+
+    .container .card .content a {
+        padding: 12px 5px;
     }
 }
