@@ -1,0 +1,77 @@
+#navigationBar{
+    border: 2px solid black;
+    width: 100%;
+    height: 70px;
+}
+h4{
+    display: inline-block;
+    position: absolute;
+}
+
+#aboutUs{
+    right: 10px;
+}
+
+#contact{
+    right: 90px;
+}
+
+#service{
+    right: 160px;
+}
+
+#home{
+    right: 230px;
+}
+
+#bar{
+    background: purple;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+}
+
+#home1{
+    top: 20px;
+}
+
+#service1{
+    top: 75px;
+}
+
+#contact1{
+    top: 130px;
+}
+
+#aboutUs1{
+    top: 185px;
+}
+
+.nav{
+    font-size: 30px;
+    left: 10%;
+}
+
+.image{
+    width: 350px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+#image1{
+    left: 20%;
+}
+
+#image2{
+    left: calc(40% + 70px);
+}
+
+#image3{
+    left: calc(60% + 140px);
+}
+
+#paragraph{
+    position: absolute;
+    top: 50px;
+    margin: 300px;
+}

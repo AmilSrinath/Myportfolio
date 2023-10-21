@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        h2{
+            position: relative;
+            display: inline-block;
+            padding: 0 50px 0 50px;
+            top: 400px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button{
+            position: relative;
+            width: 100px;
+            height: 30px;
+            top: 600px;
+            right: 600px;
+        }
+
+        button:hover{
+            background-color: grey;
+        }
+
+        img{
+            position: relative;
+            top: 415px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h2>A</h2>
+    <img src="">
+    <h2>B</h2>
+    <img src="">
+    <h2>C</h2>
+    <img src="">
+    <h2>D</h2>
+    <img src="">
+    <h2>E</h2>
+    <img src="">
+    <h2>F</h2>
+
+    <button type="button">Start</button>
+    <button type="button">Stop</button>
+
+    <script src="assest/lib/jquery.min.js"></script>
+    <script>
+        let ValueA=0;
+        let ValueB=0;
+        let ValueC=0;
+        let ValueD=0;
+        let ValueE=0;
+        let ValueF=0;
+
+        var interval=null;
+        const letterChange1 = () =>{
+            if (ValueA<5){
+                $("h2").eq(ValueA+1).text("A");
+                ValueA++;
+                if (ValueA===5){
+                    ValueA=-1;
+                }
+            }
+
+            if (ValueB<5){
+                $("h2").eq(ValueB+2).text("B");
+                ValueB++;
+                if (ValueB===4){
+                    ValueB=-2;
+                }
+            }
+
+            if (ValueC<5){
+                $("h2").eq(ValueC+3).text("C");
+                ValueC++;
+                if (ValueC===3){
+                    ValueC=-3;
+                }
+            }
+
+            if (ValueD<5){
+                $("h2").eq(ValueD+4).text("D");
+                ValueD++;
+                if (ValueD===2){
+                    ValueD=-4;
+                }
+            }
+
+            if (ValueE<5){
+                $("h2").eq(ValueE+5).text("E");
+                ValueE++;
+                if (ValueE===1){
+                    ValueE=-5;
+                }
+            }
+
+            if (ValueF<6){
+                $("h2").eq(ValueF).text("F");
+                ValueF++;
+                if (ValueF===6){
+                    ValueF=-6;
+                }
+                console.log(ValueF)
+            }
+        }
+
+        $("button").eq(0).on('click', () => {
+            if (interval===null) {
+                interval = setInterval(letterChange1, 1500);
+                $("img").eq(0).attr("src","assest/icons8-walking.gif");
+                $("img").eq(1).attr("src","assest/icons8-walking.gif");
+                $("img").eq(2).attr("src","assest/icons8-walking.gif");
+                $("img").eq(3).attr("src","assest/icons8-walking.gif");
+                $("img").eq(4).attr("src","assest/icons8-walking.gif");
+                $("img").eq(5).attr("src","assest/icons8-walking.gif");
+            }
+        });
+
+        $("button").eq(1).on('click', () => {
+            clearInterval(interval);
+            interval=null
+            $("img").eq(0).attr("src","assest/icons8-walking-50.png");
+            $("img").eq(1).attr("src","assest/icons8-walking-50.png");
+            $("img").eq(2).attr("src","assest/icons8-walking-50.png");
+            $("img").eq(3).attr("src","assest/icons8-walking-50.png");
+            $("img").eq(4).attr("src","assest/icons8-walking-50.png");
+            $("img").eq(5).attr("src","assest/icons8-walking-50.png");
+        });
+    </script>
+</body>
+</html>

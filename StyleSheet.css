@@ -23,11 +23,13 @@
 body{
     font-family: AppleGothic;
     overflow-x: hidden;
+    background-color: black;
 }
 
 html{
     scroll-behavior: smooth;
 }
+
 #upButton{
     position: fixed;
     width: 45px;
@@ -723,19 +725,59 @@ path{
 
 section>#skillBorder{
     background-color: #44BD32;
-    width: 200px;
-    height: 70px;
+    width: 100%;
+    height: 45px;
     position: relative;
-    margin-left: 20vh;
+    margin-bottom: 75px;
 }
 
-#s>div>#skills{
+#skillBorderSub1{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: -1px;
+    /*border-radius: 0 0 0 20px;*/
+}
+
+#skillBorderSub1>div{
+    position: relative;
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    background: #44BD32;
+    top: 1px;
+    right: 23px;
+    z-index: 1;
+}
+
+#skillBorderSub2{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: 6px;
+    /*border-radius: 20px 0 0 0;*/
+}
+
+#skills{
     margin: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 15px;
+    top: 4px;
     left: 60px;
+}
+
+#galleryBorderSub1>div{
+    position: relative;
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    background: #44BD32;
+    top: 1px;
+    right: 23px;
+    z-index: 1;
 }
 
 .container3{
@@ -869,8 +911,25 @@ section>#skillBorder{
     color: white;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 15px;
-    left: 8px;
+    top: 4px;
+    left: 60px;
+}
+
+#galleryBorderSub1{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: -1px;
+    /*border-radius: 0 0 0 20px;*/
+}
+
+#galleryBorderSub2{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: 6px;
 }
 
 .image-grid{
@@ -947,11 +1006,66 @@ body>#g{
 
 section>#galleryBorder{
     background-color: #44BD32;
-    width: 210px;
-    height: 70px;
+    width: 100%;
+    height: 45px;
     position: relative;
-    margin-left: 17vh;
+    margin: 65px 0px 70px;
 }
+
+section>#projectBorder{
+    background-color: #44BD32;
+    width: 100%;
+    height: 45px;
+    position: relative;
+    margin: 60px 0 60px 0;
+}
+
+#project{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 4px;
+    left: 60px;
+}
+
+#projectBorderSub1>div{
+    position: relative;
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    background: #44BD32;
+    top: 1px;
+    right: 23px;
+    z-index: 1;
+}
+
+#gallery{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 4px;
+    left: 60px;
+}
+
+#projectBorderSub1{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: -1px;
+    /*border-radius: 0 0 0 20px;*/
+}
+
+#projectBorderSub2{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: 6px;
+}
+
 
 #p{
     background: black;
@@ -1061,35 +1175,45 @@ section>#galleryBorder{
     color: black;
 }
 
-
-section>#projectBorder{
-    background-color: #44BD32;
-    width: 200px;
-    height: 70px;
-    position: relative;
-    margin-left: 17vh;
-}
-
-#project{
-    margin: 0;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    top: 15px;
-    left: 8px;
-}
-
 /*---------------------------------Assignment------------------------------------*/
 
-section>#assignmentBorder{
+#assignmentBorder{
     background-color: #44BD32;
-    width: 210px;
-    height: 70px;
+    width: 100%;
+    height: 45px;
     position: relative;
-    margin-left: 17vh;
+    margin-bottom: 75px;
 }
 
-body>#As {
+#assignmentBorderSub1{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: -1px;
+    /*border-radius: 0 0 0 20px;*/
+}
+
+#assignmentBorderSub1>div{
+    position: relative;
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    background: #44BD32;
+    top: 1px;
+    right: 23px;
+    z-index: 1;
+}
+
+#assignmentBorderSub2{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: 6px;
+}
+
+#As {
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -1101,8 +1225,8 @@ body>#As {
     color: white;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 15px;
-    left: 8px;
+    top: 4px;
+    left: 31px;
 }
 
 section>#assignment{
@@ -1150,6 +1274,14 @@ section>#assignment{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+#assignment8{
+    margin-top: 0;
+}
+
+#assignment6{
+    margin-top: 90px;
 }
 
 .box .assButton{
@@ -1223,17 +1355,74 @@ section>#assignment{
     background-color: black;
 }
 
+.btnInfo i{
+    color: rgb(68, 189, 50);
+    position: relative;
+    top: 20px;
+    font-size: 38px;
+}
+
+.btnInfo i:hover{
+    font-size: 40px;
+}
+
+.iconBackground{
+    width: 37px;
+    height: 27px;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    top: -15px;
+    right: -178px;
+    z-index: -1;
+}
+
+.box:hover .btnInfo i{
+    color: black;
+}
+
+
+
 
 
 /*---------------------------------Contact------------------------------------*/
 
-section>#contactBorder{
+#contactBorder{
     background-color: #44BD32;
-    width: 210px;
-    height: 70px;
+    width: 100%;
+    height: 45px;
     position: relative;
-    margin-left: 17vh;
-    padding: 30px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+
+#contactBorderSub1{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: -1px;
+    /*border-radius: 0 0 0 20px;*/
+}
+
+#contactBorderSub1>div{
+    position: relative;
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    background: #44BD32;
+    top: 1px;
+    right: 23px;
+    z-index: 1;
+}
+
+#contactBorderSub2{
+    position: relative;
+    height: 20px;
+    background: black;
+    margin: 0 0 0 250px;
+    top: 6px;
+    /*border-radius: 20px 0 0 0;*/
 }
 
 body>#c {
@@ -1248,8 +1437,8 @@ body>#c {
     color: white;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 15px;
-    left: 8px;
+    top: 4px;
+    left: 60px;
 }
 
 body>#c {
@@ -1922,5 +2111,15 @@ body>#c {
 
     .container .card .content a {
         padding: 12px 5px;
+    }
+}
+
+@media (max-width: 370px) {
+    .image-grid{
+        --row-height: 95px;
+    }
+
+    #imgBoder{
+        width: 300px;
     }
 }

@@ -1,0 +1,54 @@
+body{
+    background-color: darkblue;
+}
+
+div{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-color: darkgray;
+    border-top-color: red;
+}
+
+div::before{
+    content: " ";
+    border: 10px solid white;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-top-color: red;
+    border-bottom-color: red;
+}
+
+div:hover::before{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+
+div>h1{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
+}
+
+
+
+

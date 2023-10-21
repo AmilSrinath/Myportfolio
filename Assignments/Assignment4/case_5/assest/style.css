@@ -1,0 +1,78 @@
+:root{
+    --slide-width: 50vw;
+    --slide-height: 50vh;
+}
+
+div{
+    width: var(--slide-width);
+    height: var(--slide-height);
+}
+
+div:first-child{
+    background-image: url("animation_slide/slide1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(2){
+    background-image: url("animation_slide/slide2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(3){
+    background-image: url("animation_slide/slide3.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(4){
+    background-image: url("animation_slide/slide4.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    animation-name: slide ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+main{
+    width: var(--slide-width);
+    height: var(--slide-height);
+    border: 5px solid red;
+    overflow: hidden;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes slide {
+    0%,20%{
+        transform: translateX(0%);
+    }
+
+    25%,45%{
+        transform: translateX(-25%);
+    }
+
+    50%,70%{
+        transform: translateX(-50%);
+    }
+
+    75%,100%{
+        transform: translateX(-75%);
+    }
+}

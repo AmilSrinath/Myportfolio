@@ -1,0 +1,48 @@
+section{;
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section>div{
+    width: 300px;
+    height: 60px;
+    background-color: purple;
+    position: relative;
+    color: white;
+    margin: 5px;
+    right: 250px;
+    border-radius: 0px 20px 20px 0px;
+
+    transition-property: right;
+    transition-duration: 1s;
+    cursor: pointer;
+
+
+}
+
+section>div:hover{
+    right: 5px;
+}
+
+section>div>h3{
+    height: max-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+}
+
+section>div>div{
+    height: max-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+}
