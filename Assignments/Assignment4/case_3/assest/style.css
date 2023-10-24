@@ -18,22 +18,23 @@
 
     25%{
         margin-top: 0;
-        margin-left: calc(100vw - 200px);
+        margin-left: calc(100vw - 235px);
         background-color: purple;
         rotate: 180deg;
     }
 
     50%{
-        margin-top: calc(100vh - 100px);
+        margin-top: calc(100vh - 180px);
         margin-left: calc(100vw - 200px);
-        background-color: green;
+        background-color: red;
         rotate: 270deg;
     }
 
     75%{
         margin-left: 0;
-        margin-top: calc(100vh - 100px);
+        margin-top: calc(100vh - 150px);
         background-color: orange;
+        rotate: -100deg;
     }
 
     100%{
