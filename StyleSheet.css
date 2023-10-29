@@ -2067,39 +2067,9 @@ body>#c {
         top: 43%;
         font-size: 22px;
     }
-
-    section>#skillBorder {
-        width: 200px;
-        height: 70px;
-        position: relative;
-        margin-left: 15vh;
-    }
-
-    section>#galleryBorder {
-        margin-left: 15vh;
-    }
 }
 
 @media (max-width: 385px) {
-    section>#skillBorder {
-        margin-left: 10vh;
-    }
-
-    section>#galleryBorder {
-        margin-left: 10vh;
-    }
-
-    section>#projectBorder {
-        margin-left: 10vh;
-    }
-
-    section>#assignmentBorder {
-        margin-left: 10vh;
-    }
-
-    section>#contactBorder {
-        margin-left: 10vh;
-    }
     .contactForm4{
         width: 115%;
     }
@@ -2137,3 +2107,40 @@ body>#c {
         width: 300px;
     }
 }
+
+@media (max-width: 385px) {
+    #a>div>#A_Letter{
+        right: -40px;
+    }
+    #a>div>span{
+        right: -235px;
+    }
+}
+
+@media (max-width: 350px) {
+    #a>div>#A_Letter{
+        right: -70px;
+        font-size: 60px;
+    }
+    #a>div>span{
+        font-size: 34px;
+        right: -236px;
+        top: 23px;
+    }
+    #a > div > #Para{
+        right: -2vw;
+        left: 332px;
+    }
+    #a>h3{
+        font-size: 17px;
+        right: 43px;
+        top: 372px;
+    }
+}
+
+@media (max-width: 383px) {
+    .iconBackground{
+        right: -46vw;
+    }
+}
+
