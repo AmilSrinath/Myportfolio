@@ -198,10 +198,6 @@ nav ul li a{
         color: #44BD32;
     }
 
-    #check:checked ~ ul{
-        left: 0;
-    }
-
     nav{
         position: fixed;
         z-index: 9999999;
@@ -443,8 +439,8 @@ svg{
 path{
     stroke-dasharray: 3062.03955078125px;
     stroke-dashoffset: 3062.03955078125px;
-    animation: LineAnimation 8s ease forwards infinite;
-    animation-delay: 1s;
+    animation: LineAnimation 6s ease forwards infinite;
+    animation-delay: 0.1s;
 }
 
 @keyframes LineAnimation {

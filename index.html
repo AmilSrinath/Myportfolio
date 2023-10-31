@@ -30,11 +30,11 @@
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
+                    <!--JS-->
                 </label>
                 <img src="assest/MyLogo.png" alt="">
                 <label class="logo">FUTURE <br> SOFTWARE <br> ENGINEER</label>
-                <ul>
+                <ul id="ul">
                     <li><a id="navHome" href="#">Home</a></li>
                     <li><a id="navAbout" href="#a">About</a></li>
                     <li><a id="navSkills" href="#s">Skills</a></li>
@@ -785,6 +785,57 @@
         btnProject5.addEventListener('mouseout', (e) => {
             btnProject5.style.transform = ``;
         })
+
+
+        $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+
+        $(document).on('click', '#menu1', () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+            console.log("Hide");
+        });
+
+        $(document).on('click', '#menu', () => {
+            $('#ul').css("left", "0px");
+            $('.checkbtn').html(`<i class="fa-solid fa-x" id="menu1"></i>`);
+            console.log("Show");
+        });
+
+        $('#navHome').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
+        $('#navAbout').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
+        $('#navSkills').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
+        $('#navGalley').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
+        $('#navProject').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
+        $('#navAssignment').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
+        $('#navContact').on('click' , () => {
+            $('#ul').css("left", "-1000px");
+            $('.checkbtn').html(`<i class="fas fa-bars" id="menu"></i>`);
+        });
+
     </script>
 </body>
 </html>
