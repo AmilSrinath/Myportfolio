@@ -1383,7 +1383,7 @@ section>#assignment{
     border-radius: 100%;
     position: relative;
     top: -15px;
-    right: -178px;
+    right: -4px;
     z-index: -1;
 }
 
@@ -2134,9 +2134,4 @@ body>#c {
     }
 }
 
-@media (max-width: 383px) {
-    .iconBackground{
-        right: -46vw;
-    }
-}
 
