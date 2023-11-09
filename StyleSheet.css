@@ -1286,8 +1286,54 @@ section>#assignment{
     padding: 30px 0 50px 0;
 }
 
+#assButton5{
+    top: 69px;
+}
+
+#assButton5Img{
+    top: 70px;
+}
+
+#assButton11{
+    top: 69px;
+}
+
+#assButton11Img{
+    top: 70px;
+}
+
+#assButton7{
+    top: 69px;
+}
+
+#assButton7Img{
+    top: 70px;
+}
+
 #assignment6{
     margin-top: 90px;
+}
+
+.line{
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.line:nth-child(1){
+    rotate: 45deg;
+    top: 180px;
+    left: -27px;
+    width: 340px;
+}
+
+.line:nth-child(2){
+    rotate: -45deg;
+    top: 180px;
+    left: -27px;
+    width: 340px;
 }
 
 .box .assButton{
@@ -1571,7 +1617,6 @@ body>#c {
     border-bottom: 2px solid #333;
     outline: none;
     background: white;
-    -webkit-text-fill-color: #333;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -1598,11 +1643,12 @@ body>#c {
 .contactForm4 .inputBox4 input[type="submit"]{
     width: 100px;
     background: #44BD32;
-    color: black;
+    color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    border-radius: 23px;
 }
 
 @media (max-width: 991px) {

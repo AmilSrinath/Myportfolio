@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+  <link rel="stylesheet" href="assest/bootstrap-5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<nav id="nav" class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="">
+    <h2>POS</h2>
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" id="customer-nav">Customer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="store-nav">Store</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="place-order-nav">Place Order</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <!--HomeForm-->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <img src="assest/3979020.jpg" alt="">
+      <p>WELCOME <br> TO <br> POINT OF SALE <br> SYSTEM</p>
+    </div>
+  </div>
+
+  <!--Customer-->
+  <div id="customerForm" class="container">
+    <p id="customer">Customer</p>
+    <div class="row">
+      <!--Form-->
+      <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+        <form>
+          <div class="mb-3">
+            <label for="cus_id" class="form-label">Cus_ID</label>
+            <input type="number" class="form-control" id="cus_id">
+          </div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+
+          <div class="mb-3">
+            <label for="nic" class="form-label">NIC</label>
+            <input type="text" class="form-control" id="nic">
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Enter your address" id="address" style="height: 100px"></textarea>
+            <label for="address">Address</label>
+          </div>
+
+
+          <div id="customerbtns" class="mt-4">
+            <button type="button" class="btn btn-success">Submit</button>
+            <button type="button" class="btn btn-primary">Update</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="reset" class="btn btn-warning">Reset</button>
+          </div>
+        </form>
+      </div>
+      <!--Table-->
+      <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="table-heading" scope="col">Cus_ID</th>
+            <th class="table-heading" scope="col">Name</th>
+            <th class="table-heading" scope="col">NIC</th>
+            <th class="table-heading" scope="col">Address</th>
+          </tr>
+          </thead>
+          <tbody class="table-tr" id="customer-tbl-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!--Store-->
+  <div id="storeForm" class="container">
+  <p id="store">Store</p>
+  <div class="row">
+    <!--Form-->
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+      <form>
+        <div class="mb-3">
+          <label for="item_id" class="form-label">Item_ID</label>
+          <input type="number" class="form-control" id="item_id">
+        </div>
+
+        <div class="mb-3">
+          <label for="item_name" class="form-label">Item_Name</label>
+          <input type="text" class="form-control" id="item_name">
+        </div>
+
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input type="text" class="form-control" id="quantity">
+        </div>
+
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input type="text" class="form-control" id="price">
+        </div>
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Enter Description" id="description" style="height: 100px"></textarea>
+          <label for="description">Description</label>
+        </div>
+
+
+        <div id="storebtns" class="mt-4">
+          <button type="button" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-primary">Update</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="reset" class="btn btn-warning">Reset</button>
+        </div>
+      </form>
+    </div>
+    <!--Table-->
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+      <table class="table">
+        <thead>
+        <tr>
+          <th class="table-heading" scope="col">Item_ID</th>
+          <th class="table-heading" scope="col">Item_Name</th>
+          <th class="table-heading" scope="col">Quantity</th>
+          <th class="table-heading" scope="col">Price</th>
+          <th class="table-heading" scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody class="table-tr" id="item-tbl-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <!--Place Order-->
+  <div id="placeOrderForm" class="container">
+  <p id="placeOrder">Place Order</p>
+  <div class="row">
+    <!--Form-->
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+      <form>
+        <div class="mb-3">
+          <label for="item_id" class="form-label">Item_ID</label>
+          <input type="number" class="form-control" id="item_id_placeOrder">
+        </div>
+
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" id="quantity_placeOrder">
+        </div>
+
+        <div id="placeOrderbtns" class="mt-4">
+          <button type="button" class="btn btn-success">Add</button>
+        </div>
+      </form>
+    </div>
+    <!--Table-->
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+      <table class="table">
+        <thead>
+        <tr>
+          <th class="table-heading" scope="col">Item_ID</th>
+          <th class="table-heading" scope="col">Quantity</th>
+          <th class="table-heading" scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody class="table-tr" id="placeOrder-tbody"></tbody>
+      </table>
+      <p id="total" class="fs-2">Total :</p>
+      <h2 id="tot"></h2>
+
+      <div class="input-group mb-3">
+        <input id="amount" type="text" class="form-control" placeholder="Amount" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button id="cal" class="btn btn-outline-secondary" type="button">Calculate</button>
+        </div>
+      </div>
+
+      <p id="cash1" class="fs-2">Cash :</p>
+      <h2 id="cash2"></h2>
+
+      <div class="mt-4">
+          <button type="button" class="btn btn-primary">Place Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="assest/lib/jquery.min.js"></script>
+<script src="assest/bootstrap-5/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    $("#customerForm").css('display','none');
+    $("#storeForm").css('display','none');
+    $("#placeOrderForm").css('display','none');
+
+    //-----------------------------Navigation--------------------------------
+    $("#customer-nav").on('click',()=>{
+      $("#customerForm").css('display','block');
+      $("#storeForm").css('display','none');
+      $("#placeOrderForm").css('display','none');
+      $("#myTabContent").css('display','none');
+    })
+
+    $("#store-nav").on('click',()=>{
+      $("#customerForm").css('display','none');
+      $("#storeForm").css('display','block');
+      $("#placeOrderForm").css('display','none');
+      $("#myTabContent").css('display','none');
+    })
+
+    $("#place-order-nav").on('click',()=>{
+      $("#customerForm").css('display','none');
+      $("#storeForm").css('display','none');
+      $("#placeOrderForm").css('display','block');
+      $("#myTabContent").css('display','none');
+    })
+
+    const nicPattern = /^\d{9}[VvXx]$/;
+    const regNIC = new RegExp(nicPattern);
+
+    //-----------------------------Customer--------------------------------
+    var row_index = null;
+    //Submit
+    $("#customerbtns>button[type='button']").eq(0).on("click", () => {
+      let cus_id = $("#cus_id").val();
+      let name = $("#name").val();
+      let nic = $("#nic").val();
+      let address = $("#address").val();
+
+      console.log(cus_id)
+      console.log(name)
+      console.log(nic)
+      console.log(address)
+
+      let record = `<tr><td class="cus_id">${cus_id}</td><td class="name">${name}</td><td class="nic">${nic}</td><td class="address">${address}</td></tr>`;
+
+      $("#customerbtns>button[type='reset']").click();
+
+      if(!cus_id | !name | !nic | !address ){
+        Swal.fire({
+          icon: 'error',
+          title: 'Please Check Text Field',
+          text: 'Something went wrong!'
+        })
+      }else{
+        Swal.fire({
+          icon: 'success',
+          title: 'Customer Saved Successful',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        $("#customer-tbl-body").append(record);
+      }
+    });
+
+    //Click Row
+    $("#customer-tbl-body").on("click", "tr", function() {
+      row_index = $(this).index();
+
+      console.log(row_index);
+
+      let cus_id = $(this).find(".cus_id").text();
+      let name = $(this).find(".name").text();
+      let nic = $(this).find(".nic").text();
+      let address = $(this).find(".address").text();
+
+      $("#cus_id").val(cus_id);
+      $("#name").val(name);
+      $("#nic").val(nic);
+      $("#address").val(address);
+    })
+
+    //Update
+    $("#customerbtns>button[type='button']").eq(1).on("click", () => {
+      let cus_id = $("#cus_id").val();
+      let name = $("#name").val();
+      let nic = $("#nic").val();
+      let address = $("#address").val();
+
+      console.log(cus_id)
+      console.log(name)
+      console.log(nic)
+      console.log(address)
+
+      let record = `<td class="cus_id">${cus_id}</td><td class="name">${name}</td><td class="nic">${nic}</td><td class="address">${address}</td>`;
+
+      $("#customerbtns>button[type='reset']").click();
+
+      if(!cus_id | !name | !nic | !address){
+        Swal.fire({
+          icon: 'error',
+          title: 'Please Check Text Field',
+          text: 'Something went wrong!'
+        })
+      }else{
+        Swal.fire({
+          icon: 'success',
+          title: 'Customer Update Successful',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        $("#customer-tbl-body>tr").eq(row_index).html(record);
+      }
+
+    });
+
+    //Delete
+    $("#customerbtns>button[type='button']").eq(2).on("click", () => {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You want delete row?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+                  'Deleted!',
+                  'Your row has been deleted.',
+                  'success'
+          )
+          $("tbody>tr").eq(row_index).remove();
+        }
+      })
+
+      $("button[type='reset']").click();
+    })
+
+    //-----------------------------Store--------------------------------
+    var row_index1 = null;
+
+    //Submit
+    $("#storebtns>button[type='button']").eq(0).on("click", () => {
+      let item_id = $("#item_id").val();
+      let item_name = $("#item_name").val();
+      let quantity = $("#quantity").val();
+      let price = $("#price").val();
+      let description = $("#description").val();
+
+      let record = `<tr><td class="item_id">${item_id}</td><td class="item_name">${item_name}</td><td class="quantity">${quantity}</td><td class="price">${price}</td><td class="description">${description}</td></tr>`;
+      $("#item-tbl-body").append(record);
+
+      $("#storebtns>button[type='reset']").click();
+
+    });
+
+    //Click Row
+    $("tbody").on("click", "tr", function() {
+      row_index1 = $(this).index();
+
+      console.log(row_index1);
+
+      let item_id = $(this).find(".item_id").text();
+      let item_name = $(this).find(".item_name").text();
+      let quantity = $(this).find(".quantity").text();
+      let price = $(this).find(".price").text();
+      let description = $(this).find(".description").text();
+
+      $("#item_id").val(item_id);
+      $("#item_name").val(item_name);
+      $("#quantity").val(quantity);
+      $("#price").val(price);
+      $("#description").val(description);
+    })
+
+    //Update
+    $("#storebtns>button[type='button']").eq(1).on("click", () => {
+      let item_id = $("#item_id").val();
+      let item_name = $("#item_name").val();
+      let quantity = $("#quantity").val();
+      let price = $("#price").val();
+      let description = $("#description").val();
+
+      let record = `<td class="item_id">${item_id}</td><td class="item_name">${item_name}</td><td class="quantity">${quantity}</td><td class="price">${price}</td><td class="description">${description}</td>`;
+      $("tbody>tr").eq(row_index1).html(record);
+
+      $("#storebtns>button[type='reset']").click();
+
+    });
+
+    //Delete
+    $("#storebtns>button[type='button']").eq(2).on("click", () => {
+      $("tbody>tr").eq(row_index1).remove();
+      $("button[type='reset']").click();
+    })
+
+
+    //-----------------------------Place Order--------------------------------
+    //Submit
+    let netTot = 0;
+    $("#placeOrderbtns>button[type='button']").eq(0).on("click", () => {
+      let item_id = $("#item_id_placeOrder").val();
+      let quantity = $("#quantity_placeOrder").val();
+      let total = quantity*100;
+
+      let record = `<tr><td class="item_id">${item_id}</td><td class="quantity">${quantity}</td><td class="price">${total}</td></tr>`;
+      $("#placeOrder-tbody").append(record);
+
+      netTot+=total;
+
+      $("#tot").text(netTot);
+    });
+
+    //Calculate
+    $("#cal").on("click", () => {
+      let cash = $("#amount").val()-netTot;
+
+      $("#cash2").text(cash);
+    });
+
+
+    /* ------------------------------Form Design----------------------------------- */
+
+    $("#customer-nav").on('click',()=>{
+      $("#customer-nav").css('background','white');
+      $("#customer-nav").css('color','black');
+
+      $("#store-nav").css('background','#0d6efd');
+      $("#store-nav").css('color','white');
+
+      $("#place-order-nav").css('background','#0d6efd');
+      $("#place-order-nav").css('color','white');
+    })
+
+    $("#store-nav").on('click',()=>{
+      $("#store-nav").css('background','white');
+      $("#store-nav").css('color','black');
+
+      $("#customer-nav").css('background','#0d6efd');
+      $("#customer-nav").css('color','white');
+
+      $("#place-order-nav").css('background','#0d6efd');
+      $("#place-order-nav").css('color','white');
+    })
+
+    $("#place-order-nav").on('click',()=>{
+      $("#place-order-nav").css('background','white');
+      $("#place-order-nav").css('color','black');
+
+      $("#customer-nav").css('background','#0d6efd');
+      $("#customer-nav").css('color','white');
+
+      $("#store-nav").css('background','#0d6efd');
+      $("#store-nav").css('color','white');
+    })
+
+  </script>
+</body>
+</html>
