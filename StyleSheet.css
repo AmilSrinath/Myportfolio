@@ -2180,4 +2180,9 @@ body>#c {
     }
 }
 
+@media (max-width: 440px) {
+    .content3 p {
+        font-size: 13px;
+    }
+}
 
